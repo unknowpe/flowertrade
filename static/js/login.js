@@ -1,12 +1,12 @@
-HOST="http://127.0.0.1:5000";
+HOST="http://127.0.0.1:2000";
 $(document).ready(function() {
 
 	$('#login').on('click', function(event) {
 
 		$.ajax({
 			data : {
-				name : $('#username').val(),
-				email : $('#password').val(),
+				username : $('#username').val(),
+				password : $('#password').val(),
 				useragent : navigator.userAgent
 			},
 			type : 'POST',
