@@ -1,7 +1,7 @@
 HOST="http://127.0.0.1:2000";
 $(document).ready(function() {
 
-	$('#login').on('click', function(event) {
+	$('#login').on('submit', function(event) {
 
 		$.ajax({
 			data : {
